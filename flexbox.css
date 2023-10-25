@@ -105,3 +105,23 @@ main {
   border-radius: 25px;
   width: 80%;
 }
+/*1200px*/
+.news {
+  display: flex;
+  padding: 1.5em;
+  background-color: #fef7e2;
+  border-radius: 25px;
+  gap: 1em;
+}
+@media (max-width: 1200px) {
+  .cards .card:nth-of-type(5) {
+    display: none;
+    z-index: -1;
+  }
+  .cards > .card {
+    width: 25%;
+  }
+  .news {
+    flex-direction: column-reverse;
+  }
+}
